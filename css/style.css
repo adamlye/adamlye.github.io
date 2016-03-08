@@ -1,0 +1,623 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,700);
+/* Eric Meyer CSS Reset - Begins */
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+/* Eric Meyer CSS Reset - Ends */
+/*
+REV Colours'
+light grey: #d7d7d9;
+med greg: #b3b4b7;
+dark grey: #a4a5a9;
+bright red #E60000;
+light red #e61e26;
+med red #931a1d;
+med red2 #872c25;
+dark red : #6b0f18;
+
+
+*/
+html,body{
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 20px;
+    line-height: 1.5; /* works out to 30px */
+    font-weight: 300;
+    background: #E8E8E8;
+    height:100%;
+    color: black;
+    
+    
+}
+.REV {
+    font-style:italic;
+} 
+/* set page width and center the layout */
+#wrapper{
+        width: 960px;  
+        margin-left:  auto;
+        margin-right:  auto;
+        background-color: white;
+        padding: 5px;
+        height:96%;   
+    min-height: 770px;
+}
+
+header{
+/*     border: 1px solid black;*/
+    width: 100%;
+    height: 70px;
+    overflow: hidden;
+    
+    
+}
+
+header h1 a{
+    display: block;
+    width: 249px;
+    height: 70px;
+    background: url(../images/REVLogo60.png);
+    float:left;
+}
+
+header h1 a span{
+    display:  none;
+}
+
+/* navigation container */
+nav{
+  /*  background: white;*/
+/*      background: grey;*/
+    /*float: right;*/
+    margin:5px 0px 10px 0px;
+    width: 100%;
+    height:20px;    
+    text-align: center;
+}
+
+/* list inside of the nav container */
+nav ul{
+    /*float: right;*/
+    display: inline-block;
+}
+
+/* the nav list items */
+nav ul li{
+    float:  left   ; /* makes the links position in a row */
+    margin-right: 20px; /* spacing between the links */
+    background: #931a1d;    
+    width: 130px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+/* actual clickable links in the nav */
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    display: block;
+    
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-weight: 500;
+    /*text-shadow: 4px 4px 6px rgba(150, 150, 150, 1);*/
+/*    
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    */
+}
+nav ul li a:hover{
+    background-color: #E60000;
+    font-weight: 600;
+  
+}
+#Nav_Bar {
+   width: 98%; 
+  /*  height:40px;*/
+    text-align: center; 
+    background:  #e61e26;
+    height:35px;
+    border-radius: 10px;
+   
+} 
+
+#Nav_Bar span {
+    font-size: 16px;
+    color:white;
+    font-weight: 600;
+    padding-right:20px;    
+} 
+
+#OurServicesX {
+    width: 100%;
+    margin-top: 45px;
+}
+
+#OurServicesX .ServicesX {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#OurServicesX .ServicesX p{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+#OurServicesX .ServicesX p span{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+#OurServicesX .ServicesList2 {
+    margin-left: 10px;
+    width:320px;
+    float :left;
+}
+.sl1 {
+    width:280px;
+    padding-left: 20px;
+    list-style-type: disc; 
+    font-weight: 700;
+    line-height: 40px;
+    font-size: 18px;
+
+    }
+
+#OurServicesX .ServicesList3 {
+    margin-left: 5px;
+    width:330px;
+    float :left;
+}
+
+.sl2 {
+    width:280px;
+    padding-left: 20px;
+    list-style-type: disc; 
+    font-weight: 700;
+    line-height: 40px;
+    font-size: 18px;
+
+    }
+
+#OurServicesX .ServicesList4 {
+    margin-top: 50px;
+    width:200px;
+    float :left;
+    color: #E60000;    
+    font-weight: 700;    
+    font-size: 26px;
+    border: 2px solid #E60000;
+    padding: 5px 10px 15px 10px;
+}
+
+
+
+
+#OurServices {
+    width: 100%;
+
+    margin-top: 45px;
+}
+#OurServices .Services {
+    margin-left: 50px;
+    margin-right: 50px;
+ 
+}
+
+#OurServices .Services h2 {   
+    padding-top: 22px;
+        font-size: 20px;
+    font-weight: 600;
+ 
+    
+}
+#OurServices .Services p{
+
+    font-size: 22px;
+    font-weight: 500;
+    
+}
+
+#OurServices .Services p span{
+
+    font-size: 20px;
+    font-weight: 600;
+    
+}
+
+#OurServices .ServicesList {
+    margin-left: 50px;
+    width:400px;
+    float :left;
+}
+
+#OurServices .ServicesList h2 {   
+    padding-top: 20px;
+        font-size: 20px;
+    font-weight: 600;
+    color:  #E60000;
+}
+.osbl {
+    margin-left: 0;
+    padding-right: 0;
+    padding-left: 20px;
+    list-style-type: none; 
+    
+font-weight: 500;
+    font-size: 80%;
+}
+
+.osbl li::before {
+    content:open-quote;
+    margin-right: 5px;    
+    background-image: url(../images/Check.gif);   
+    color: white;
+    font-weight: bold;
+    padding: 3px 8px;    
+}
+
+.osl2 {
+    list-style-type:disc; 
+    }
+
+
+#OurServices .ServicesPic {
+    width:480px;
+    float: right;
+    padding-top: 40px;
+}
+
+#OurServices .ServicesPic img {
+    
+    width:430px;
+    Height:285px;
+    -moz-box-shadow: 10px 10px 5px #ccc;
+    -webkit-box-shadow: 10px 10px 5px #ccc; 
+    box-shadow: 10px 10px 5px #ccc;
+    -moz-border-radius:25px;
+    -webkit-border-radius:25px;
+    border-radius:25px;
+}
+#our-team{
+    width: 930px;;
+    height:660px;
+    
+    margin-left: 10px;
+    background-color: white;
+}
+
+
+#our-team .Bettie{
+    width: 430px;
+    float: left;
+ 
+    margin-top:10px;
+    border: 1px solid black;
+       -moz-box-shadow: 5px 10px 5px #000;
+    -webkit-box-shadow: 5px 10px 5px #000; 
+    box-shadow: 5px 10px 5px #000;
+    
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+    padding: 5px 10px 15px 10px;
+    }
+
+#our-team .BettiePic {
+    
+    padding-top: 5px;
+    margin-left: 140px;
+    width:120px;
+    Height:120px;   
+    padding-bottom: 20px;
+}
+
+#our-team .BettiePic Img {
+    
+    -moz-box-shadow: 5px 10px 5px #ccc;
+    -webkit-box-shadow: 5px 10px 5px #ccc; 
+    box-shadow: 5px 10px 5px #ccc;
+    
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+    
+}
+#our-team .Bettie p{
+  
+    font-size: 14px;
+    font-weight: 500;
+    height: 200px;
+    text-align:justify;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
+#our-team .Bettie a span{
+    display: none;
+}
+.bl {
+    margin-left: 0;
+    padding-right: 0;
+    padding-left: 2px;
+    list-style-type: none; 
+    font-weight: 500;
+    font-size: 80%;
+    width:400px;
+}
+
+.bl li::before {
+    content:open-quote;
+    margin-right: 5px;
+    
+    background-image: url(../images/Check.gif);
+    
+    
+    color: white;
+    font-weight: bold;
+    padding: 3px 8px;
+    
+}
+#our-team .Chris{
+   width: 430px;
+    float: right;
+ 
+    margin-top:10px;
+    border: 1px solid black;
+       -moz-box-shadow: 5px 10px 5px #000;
+    -webkit-box-shadow: 5px 10px 5px #000; 
+    box-shadow: 5px 10px 5px #000;
+    
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+    padding: 5px 10px 15px 10px;
+}
+
+#our-team .ChrisPic {
+        padding-top: 5px;
+    margin-left: 140px;
+    width:112px;
+    Height:119px;   
+    padding-bottom: 20px;
+}
+
+#our-team .ChrisPic Img {
+    width:112px;
+    -moz-box-shadow: 5px 10px 5px #ccc;
+    -webkit-box-shadow: 5px 10px 5px #ccc; 
+    box-shadow: 5px 10px 5px #ccc;
+    
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+    
+}
+#our-team .Chris p{
+    height: 200px;
+    font-size: 14px;
+    font-weight: 500;
+    text-align:justify;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#our-team .Chris a span{
+    display: none;
+}
+
+#NewRoads{
+    width: 930px;;
+    height:300px;
+    
+    margin-left: 10px;
+    background-color: white;
+}
+
+#NewRoads .BI {
+       
+    width: 430px;
+    float: left;
+ 
+    }
+#NewRoads .BIPic Img {
+    margin-left: 50px;
+    width:350px;
+    }
+
+
+#NewRoads .BI2 {
+       
+    width: 430px;
+    float: right; 
+    margin-top:10px;
+    }
+
+#ContactUS {
+    width: 100%;
+    height:640px;
+    margin-top: 25px;
+}
+#ContactUS .Contact {
+    margin-left: 50px;
+    margin-right: 50px;
+    
+}
+
+#ContactUS .ContactLeft {
+    float:left; 
+    
+}
+
+#ContactUS .ContactUSPic {
+    float:Right; 
+    padding-top: 60px;
+}
+
+#ContactUS .ContactUSPic img {
+    /*opacity: 0.9;*/
+    width:500px;
+ /*   Height:320px;*/
+    -moz-box-shadow: 10px 10px 5px #ccc;
+    -webkit-box-shadow: 10px 10px 5px #ccc; 
+    box-shadow: 10px 10px 5px #ccc;
+    -moz-border-radius:25px;
+    -webkit-border-radius:25px;
+    border-radius:25px;
+}
+#ContactUS .Contact p {   
+   /*     text-indent: 30px;*/
+    font-size: 15px;
+    font-weight: 500;
+    
+}
+#ContactUS .Contact h2 {   
+    padding-top: 10px;
+        font-size: 20px;
+    font-weight: 600;
+    
+}
+
+.cbl {
+    margin-left: 0;
+    padding-right: 0;
+    padding-left: 20px;
+    list-style-type: none; 
+  font-weight: 500;
+    font-size: 14px;
+}
+
+#LowerNavBar{
+    clear: both;    
+    margin-bottom: 20px;    
+    display:none;
+}
+
+#LowerNavBar a{
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+     background: #dd322c;
+    display: inline-block;    
+    width: 300px;
+    margin-left: 12px;
+    height: 30px;
+    line-height: 30px;    
+    text-align: center;
+    
+    /* subtle drop shadow */
+    -webkit-box-shadow: 0px 7px 12px rgba(0, 0, 0, 0.17);
+    -moz-box-shadow: 0px 7px 12px rgba(0, 0, 0, 0.17);
+    box-shadow: 0px 7px 12px rgba(0, 0, 0, 0.17);
+    
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#LowerNavBar a:hover{
+    background-color: #872c25;
+}
+
+
+footer{
+    clear: both;
+    background: #212121;
+    color: white;
+    height: 30px;
+        width: 970px;  
+        margin-left:  auto;
+        margin-right:  auto;
+    text-align: right;
+}
+
+footer span{
+    margin-right: 20px;
+    font-size: 10px;
+    
+}
+
+#r1 {
+    margin-right: 16px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+#r2 {
+    margin-right: 16px;
+    font-size: 30px;
+    color:  #E60000;
+    font-weight: 700;
+}
+#pdf {    
+	height: 900px;
+	margin: 2em auto;
+}
+
+#pdf p {
+   padding: 1em;
+}
+
+#pdf object {
+   display: block;
+   border: solid 1px #666;
+}
+
+@media only screen and (max-width: 500px) {
+    
+        nav{ 
+        width: 200px;
+        margin: 0px 20px;
+        height:150px;
+            
+        }
+        nav ul li{
+                width: 200px;
+            margin:1px;            
+    
+    }
+  
+    #Nav_Bar {
+        width: 450px; 
+        margin-left: 10px;
+    } 
+    
+    
+#Nav_Bar span {
+    font-size: 11px;
+    color:white;
+    font-weight: 500;
+    padding:0px 0px 0px 0px;    
+} 
+
+    nav ul li a.current,
+
+    
+}
+
+@media only screen and (min-width: 501px) {
+    
+    
+nav ul li a.current,
+nav ul li a:hover{
+    background-color: #E60000;
+    font-weight: 600;
+    /*background: red;*/
+  
+-webkit-box-shadow: 10px 10px 0px -4px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 0px -4px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 0px -4px rgba(0,0,0,0.75);
+  
+}
+
+
+}
+
+
+
+
+
